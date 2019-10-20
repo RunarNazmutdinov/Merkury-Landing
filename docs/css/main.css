@@ -17,7 +17,8 @@ a {
   text-decoration: none !important;
 }
 .header {
-  height: 800px;
+  height: 100vh;
+  min-height: 600px;
   background-color: #0e1a35;
   background-image: url('../img/fon.jpg');
   background-repeat: no-repeat;
@@ -25,7 +26,7 @@ a {
   background-size: cover;
   position: relative;
 }
-@media (max-height: 800px) {
+@media (max-height: 600px) {
   .header .header {
     height: auto;
   }
