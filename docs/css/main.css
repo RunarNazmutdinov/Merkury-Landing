@@ -26,6 +26,11 @@ a {
   background-size: cover;
   position: relative;
 }
+@media (min-width: 992px) {
+  .header {
+    height: 1100px;
+  }
+}
 @media (max-height: 600px) {
   .header .header {
     height: auto;
