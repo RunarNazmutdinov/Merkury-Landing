@@ -17,7 +17,7 @@ a {
   text-decoration: none !important;
 }
 .header {
-  height: 100vh;
+  height: 800px;
   background-color: #0e1a35;
   background-image: url('../img/fon.jpg');
   background-repeat: no-repeat;
@@ -25,9 +25,9 @@ a {
   background-size: cover;
   position: relative;
 }
-@media (min-width: 992px) {
-  .header {
-    height: 1100px;
+@media (max-height: 800px) {
+  .header .header {
+    height: auto;
   }
 }
 .heading {
@@ -110,7 +110,6 @@ a {
   left: 50%;
   bottom: 0px;
   transform: translate(-50%, 30%);
-  margin-top: 120px;
   box-shadow: 0px -4px 70px -28px #587ac4;
   display: block;
 }
@@ -145,7 +144,6 @@ a {
   bottom: 0;
   transform: translate(-50%, 30%);
   text-align: center;
-  margin-top: 97px;
   box-shadow: 0px -4px 70px -28px #587ac4;
   display: none;
 }
@@ -1069,6 +1067,7 @@ h1,
 }
 .footer-nav li a {
   color: #8492af;
+  transition: all 0.5s ease-in;
 }
 .footer-nav li a:hover {
   color: #fff;
@@ -1086,6 +1085,7 @@ h1,
 }
 .social-icons a {
   color: #8492af;
+  transition: all 0.5s ease-in;
 }
 .social-icons a:hover {
   color: #fff;
@@ -1093,6 +1093,7 @@ h1,
 }
 .social-icons .fa {
   padding-left: 10px;
+  transition: all 0.5s ease-in;
 }
 @media (max-width: 990px) {
   .social-icons .fa {
@@ -1100,6 +1101,15 @@ h1,
     padding-top: 15px;
     padding-left: 0;
   }
+}
+.fa-facebook:hover {
+  color: #3b5998;
+}
+.fa-twitter:hover {
+  color: #55acee;
+}
+.fa-google-plus:hover {
+  color: #dd4b39;
 }
 nav {
   width: 100%;
@@ -1149,6 +1159,7 @@ nav ul li a {
   font-weight: 400;
   padding: 15px 40px 15px 40px;
   display: block;
+  transition: all 0.3s ease-in;
 }
 @media (min-width: 992px) {
   nav ul li a {
