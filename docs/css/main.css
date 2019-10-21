@@ -1106,13 +1106,13 @@ h1,
 .fa-google-plus:hover {
   color: #dd4b39;
 }
-.header__block-nav:after {
+.nav__block:after {
   content: '';
   display: table;
   clear: both;
 }
 @media (min-width: 992px) {
-  .header__block-nav {
+  .nav__block {
     padding-top: 60px;
   }
 }
@@ -1138,6 +1138,8 @@ h1,
   top: 0;
   left: 0;
   right: 0;
+  background-color: rgba(14, 26, 53, 0.9);
+  opacity: 0.9;
 }
 @media (min-width: 992px) {
   .navigation {
@@ -1159,13 +1161,13 @@ h1,
   display: none;
   text-align: center;
   padding-top: 60px;
-  background-color: rgba(14, 26, 53, 0.9);
-  opacity: 0.9;
+  padding-bottom: 60px;
 }
 @media (min-width: 992px) {
   .navigation ul {
     display: block;
     width: auto;
+    padding: 0;
   }
 }
 .navigation ul li {
@@ -1219,21 +1221,16 @@ h1,
   border: 1px solid #fff;
   transition: all 0.5s linear;
 }
-.navigation__toggle--button:before {
-  content: '';
+.navigation__toggle--button {
   display: block;
   position: absolute;
   top: 30px;
   right: 30px;
-  background-image: url('../img/favicons/nav-icon.png');
-  background-repeat: no-repeat;
   color: #fff;
-  width: 20px;
-  height: 20px;
   cursor: pointer;
 }
 @media (min-width: 992px) {
-  .navigation__toggle--button:before {
+  .navigation__toggle--button {
     display: none;
   }
 }

@@ -1,11 +1,10 @@
-.header__block-nav:after {
+.nav__block:after {
     content: '';
     display: table;
     clear: both;
 }
 
-.header__block-nav {
-
+.nav__block {
 
     @media(min-width: 992px) {
         padding-top: 60px;
@@ -35,6 +34,8 @@
     top: 0;
     left: 0;
     right: 0;
+    background-color: rgba(14, 26, 53, 0.9);
+    opacity: 0.9;
 
     @media(min-width: 992px) {
         position: static;
@@ -53,13 +54,14 @@
         padding: 0;
         display: none;
         text-align: center;
-         padding-top: 60px;
-        background-color: rgba(14, 26, 53, 0.9);
-        opacity: 0.9;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
 
         @media(min-width: 992px) {
             display: block;
             width: auto;
+            padding: 0;
         }
 
         li {
@@ -124,19 +126,14 @@
     transition: all 0.5s linear;
 }
 
-.navigation__toggle--button:before {
-    content: '';
+.navigation__toggle--button{
     display: block;
     position: absolute;
     top: 30px;
     right: 30px;
-    background-image: url('../img/favicons/nav-icon.png');
-    background-repeat: no-repeat;
     color: #fff;
-    width: 20px;
-    height: 20px;
     cursor: pointer;
-
+    
     @media(min-width: 992px) {
         display: none;
     }

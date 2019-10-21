@@ -10,9 +10,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="libs/owl-carousel/owl.transitions.css">
-    <link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -21,9 +18,12 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="header__block-nav">
+        <div class="nav__block">
             <div class="logo"><img src="img/logo.png" alt="логотип"></div>
             <nav class="navigation">
+              <div id="navigation-toogle" class="navigation__toggle--button">
+              <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+            </div>
                 <ul>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#price">Pricing </a></li>
@@ -32,7 +32,7 @@
                     <li><a href="#" class="nav-button">Login</a></li>
                 </ul>
             </nav>
-            <div id="navigation-toogle" class="navigation__toggle--button"></div>
+           
         </div>
         <div class="heading">
             <h1 class="title">Grow Your business with Merkury</h1>
@@ -237,7 +237,6 @@
     <!--//Footer -->
     <script src="libs/bootstrap/bootstrap.js"></script>
     <script src="libs/jQuery/jquery-1.11.2.min.js"></script>
-    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
     <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
     <script src="js/main.js"></script>
 </body>
