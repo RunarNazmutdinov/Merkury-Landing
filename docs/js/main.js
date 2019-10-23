@@ -1,42 +1,18 @@
-
     $(document).ready(function() {
+	  // Cоздаем переменные для кнопки и для меню
+	  var pull = $("#navigation-toggle");
+	  var nav = $(".navigation ul");
 
-  
+	   // Описываем событие при нажатии на кнопку
+	   $(pull).on("click", function(e) {
 
+	   // Отменяем стандартное поведение ссылки в браузере
+	   e.preventDefault();
 
-		// Мобильная навигация
-		$('.navigation__toggle').on('click', function(e){
-			e.preventDefault();
-			$('.navigation__list').toggleClass('navigation__list--open');
+	   // Открываем / Скрываем меню
+	   $(nav).slideToggle();
 
-		})
-
-		$('.navigation__list a').on('click', function(){
-			$('.navigation__list').removeClass('.navigation__list--open');
-
-		})
-
-
-
-
-
-
-
-
-	  // // Cоздаем переменные для кнопки и для меню
-	  // var pull = $("#navigation-toogle");
-	  // var nav = $(".navigation ul");
-
-	  //  // Описываем событие при нажатии на кнопку
-	  //  $(pull).on("click", function(e) {
-
-	  //  // Отменяем стандартное поведение ссылки в браузере
-	  //  e.preventDefault();
-
-	  //  // Открываем / Скрываем меню
-	  //  $(nav).slideToggle();
-
-	  // });
+	  });
 
 
 	  //slide2id - плавная прокрутка по ссылкам внутри страницы
