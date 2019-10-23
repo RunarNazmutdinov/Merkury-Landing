@@ -1,4 +1,4 @@
-    $(document).ready(function() {
+	$(document).ready(function() {
 	  // Cоздаем переменные для кнопки и для меню
 	  var pull = $("#navigation-toggle");
 	  var nav = $(".navigation ul");
@@ -13,6 +13,20 @@
 	   $(nav).slideToggle();
 
 	  });
+
+
+     // Скрываем меню при нажатии на ссылку
+	   
+	   var w = $(window).width();
+       if(w > 992) {
+       	$('nav.navigation a').on("click", function(){
+       		$(nav).slideToggle();
+
+       	});
+       }
+
+      
+
 
 
 	  //slide2id - плавная прокрутка по ссылкам внутри страницы

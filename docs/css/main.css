@@ -1029,9 +1029,9 @@ h1,
   }
 }
 .navigation ul {
+  display: none;
   margin: 0;
   padding: 80px 0 0 ;
-  display: none;
   text-align: center;
 }
 @media (min-width: 992px) {
