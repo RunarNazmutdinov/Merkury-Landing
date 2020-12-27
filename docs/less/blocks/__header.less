@@ -23,7 +23,11 @@
 
 .heading {
   text-align: center;
-  padding: 100px 15px 0;
+  padding: 80px 15px 0;
+
+  @media (min-width: 992px) {
+    padding: 100px 15px 0;
+  }
 }
 
 .title {
@@ -90,7 +94,6 @@
   position: absolute;
   text-align: center;
   left: 50%;
-  bottom: 0px;
   transform: translate(-50%, 30%);
   box-shadow: 0px -4px 70px -28px rgba(88, 122, 196, 1);
   display: block;
@@ -121,9 +124,9 @@
 
 .heading-img-small {
   position: absolute;
-  width: 85%;
+  width: 70%;
   left: 50%;
-  bottom: 0;
+  bottom: 0px;
   transform: translate(-50%, 30%);
   text-align: center;
   box-shadow: 0px -4px 70px -28px rgba(88, 122, 196, 1);
