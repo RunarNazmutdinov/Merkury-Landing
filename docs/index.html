@@ -19,8 +19,12 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap&subset=cyrillic"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
   </head>
 
@@ -151,29 +155,61 @@
     <!-- Slider section -->
     <section class="wrap-section-slider">
       <div class="wrapper__container">
-        <div class="slider__block">
-          <img class="slide-img" src="img/workflow.png" alt="картинка" />
-        </div>
-        <div class="slider-headline">
-          <h1 class="slider-title">Drag & Drop</h1>
-          <p class="slider-subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br />eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <br />
-          <p class="slider-subtitle">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco<br />laboris
-            nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <div class="arrow">
-            <div class="arrow-left">
-              <img src="img/arrow-left.png" alt="стрелочки" />
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/workflow.png" alt="картинка" />
+              <div class="slide-item">
+                <h2 class="slide-title">Drag & Drop</h2>
+                <p class="slide-subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="slide-subtitle">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
             </div>
-            <div class="arrow-right">
-              <img src="img/arrow-right.png" alt="стрелочки" />
+            <div class="swiper-slide">
+              <img src="img/workflow.png" alt="картинка" />
+              <div class="slide-item">
+                <h2 class="slide-title">Drag & Drop</h2>
+                <p class="slide-subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="slide-subtitle">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/workflow.png" alt="картинка" />
+              <div class="slide-item">
+                <h2 class="slide-title">Drag & Drop</h2>
+                <p class="slide-subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="slide-subtitle">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
             </div>
           </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
+        <!-- Swiper JS -->
+
+        <!-- Initialize Swiper -->
       </div>
     </section>
     <!--// Slider section -->
@@ -305,6 +341,7 @@
     <script src="libs/jQuery/jquery-1.11.2.min.js"></script>
     <script src="libs/bootstrap/bootstrap.js"></script>
     <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://use.fontawesome.com/d9e62ac3ee.js"></script>
   </body>
