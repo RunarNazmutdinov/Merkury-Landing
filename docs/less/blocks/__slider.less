@@ -14,31 +14,102 @@
   }
 }
 
-.slide-item {
-  max-width: 510px;
-  margin-right: 160px;
-  margin-bottom: 80px;
+.slide-text {
+  padding: 0 15px;
+
+  @media (min-width: 992px) {
+    padding: 0;
+  }
+
+  @media (min-width: 1200px) {
+    margin-right: 60px;
+  }
+  @media (min-width: 1600px) {
+    margin-right: 200px;
+    margin-bottom: 65px;
+  }
+}
+
+.slide-img {
+  padding: 0 15px;
+  max-width: 320px;
+
+  @media (min-width: 610px) {
+    max-width: 460px;
+  }
+
+  @media (min-width: 992px) {
+    padding: 0 15px;
+    max-width: 580px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 15px;
+    max-width: 630px;
+  }
+  @media (min-width: 1600px) {
+    max-width: 100%;
+    padding: 0;
+  }
 }
 .slide-title {
   font-family: "Roboto", sans-serif;
-  font-size: 65px;
+  font-size: 40px;
   color: #fff;
   font-weight: 100;
-  padding-bottom: 35px;
+  padding-bottom: 15px;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 45px;
+  }
+
+  @media (min-width: 992px) {
+    padding-bottom: 25px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 65px;
+    padding-bottom: 15px;
+  }
+  @media (min-width: 1600px) {
+    margin-bottom: 25px;
+  }
 }
 .slide-subtitle {
+  max-width: 290px;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 13px;
   color: #8492af;
   font-weight: 400;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+
+  @media (min-width: 610px) {
+    max-width: 430px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 992px) {
+    padding-bottom: 30px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 18px;
+    padding-bottom: 15px;
+    margin: 0;
+  }
+  @media (min-width: 1600px) {
+    margin-bottom: 25px;
+    max-width: 510px;
+  }
 }
 .swiper-container {
   width: 100%;
   height: 100%;
+  z-index: 0 !important;
 }
 .swiper-slide {
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -51,4 +122,25 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  flex-wrap: wrap;
+
+  @media (min-width: 992px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  @media (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
