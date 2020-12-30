@@ -1,4 +1,4 @@
-# Merkury-Landing
+# Merkury
 макет "Merkyru_Landing. Дизайн (PSD) и верстка (HTML, CSS, LESS, jQuery).
 
 ## Что внутри:
