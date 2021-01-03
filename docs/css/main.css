@@ -1048,7 +1048,7 @@ h1,
 }
 .navigation ul.navigation__list--open {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: rgba(199, 223, 235, 0.95);
